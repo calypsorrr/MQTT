@@ -28,6 +28,6 @@ client = mqtt.Client("P1") #create new instance
 client.on_message=on_message #attach function to callback
 print("connecting to broker")
 client.connect(broker_address) #connect to broker
-print("Subscribing to topic","sensor")
-client.subscribe("sensor")
+print("Subscribing to topic","iot/awesomesauce")
+client.subscribe("iot/awesomesauce")
 client.loop_forever()
